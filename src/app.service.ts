@@ -14,7 +14,7 @@ export class AppService {
       const outputDir = path.dirname(filePath);
       const outputPath = path.join(outputDir, `${fileName}.pdf`);
 
-      const command = `unoconv -f pdf -o "${outputPath}" "${filePath}"`;
+      const command = `libreoffice --headless --convert-to pdf --outdir "${outputDir}" "${filePath}"`;
 
       await execAsync(command);
 
