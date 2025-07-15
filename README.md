@@ -6,11 +6,12 @@
 - `npm install`
 - `npm run start:build`
 
-## ROUTE `/convert/docx-to-pdf`
+### POST `/convert/docx-to-pdf`
 
 header: form-data
 
-| key  |  body     |
-|:-----|:---------:|
-| file | `file.docx` |
+
+| key  |  body     | tipe       |
+|:-----|:---------:|:----------:|
+| file | `file.docx` | file(docx) |
 
